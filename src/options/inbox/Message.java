@@ -2,7 +2,7 @@ package options.inbox;
 
 import java.util.Date;
 
-class Message {
+public class Message {
     private String sender, recipient, subject, body;
     private Date receivedDate;
     private boolean isRead = false;
@@ -24,6 +24,8 @@ class Message {
     }
 
     public boolean isRead() { return isRead; }
+    public String getBody() { return body; }
+    public String getSubject() { return subject; }
     public String getSender() { return sender; }
     public String getRecipient() { return recipient; }
 }

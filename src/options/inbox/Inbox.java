@@ -15,7 +15,7 @@ public class Inbox {
         if (messages.isEmpty()) {
             System.out.println("Inbox is empty.");
         } else {
-            messages.forEach(m -> System.out.println(m + "\n---"));
+            messages.forEach(m -> System.out.println(m.getSubject() + (m.isRead() ? " " : " *") + "\n---"));
         }
     }
 
@@ -29,6 +29,10 @@ public class Inbox {
         if (isValidIndex(index)) {
             messages.remove(index);
         }
+    }
+
+    public int size() {
+        return messages.size();
     }
 
     private boolean isValidIndex(int index) {
