@@ -1,4 +1,4 @@
-package exceptions;
+package options.electives.exceptions;
 
 public class NotAdminRights extends Exception {
     public NotAdminRights() {
