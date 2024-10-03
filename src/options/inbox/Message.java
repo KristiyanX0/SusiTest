@@ -1,4 +1,4 @@
-package Options.Inbox;
+package options.inbox;
 
 import java.util.Date;
 
@@ -25,4 +25,5 @@ class Message {
 
     public boolean isRead() { return isRead; }
     public String getSender() { return sender; }
+    public String getRecipient() { return recipient; }
 }
